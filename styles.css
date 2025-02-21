@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ffc8fa, #f0f4f8); /* Gradiente de fundo */
+    background: linear-gradient(to right, #222222, #000000, #222222); /* Gradiente de fundo */
     height: 100vh; /* Altura total da viewport */
     display: flex; /* Usar flexbox para centralizar */
     justify-content: center; /* Centralizar horizontalmente */
@@ -66,9 +66,23 @@ li {
     display: block; /* Faz o botão ser um bloco */
     margin: 0 auto; /* Centraliza o botão horizontalmente */
 }
+.deletebutton {
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remover borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #ff0000; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    align-items: center;
+    display: block; /* Faz o botão ser um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
 
 .textocentro {
     text-align: center;
+    color: white;
 }
 .alinhador {
     display: flex;
@@ -76,12 +90,27 @@ li {
     align-items: space-between;
     gap: 20px;
 }
-.imagem {
-    display: flex;
-
-    height: 30%;
- 
-    
-
-    
+.comprado {
+    text-decoration: line-through; /* Risca o texto */
+    color: rgb(85, 85, 85); /* Muda a cor do texto */
+    border: 10px solid white; /* Borda verde para itens comprados */
+    border-color: white;
+}
+button.excluir {
+    background-color: rgb(150, 0, 0); /* Fundo vermelho para o botão de excluir */
+    color: white; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    padding: 5px 10px; /* Adiciona um pouco de padding */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+button.comprar {
+    background-color: rgb(0, 102, 0); /* Fundo verde para o botão de comprar */
+    color: white; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    padding: 5px 10px; /* Adiciona um pouco de padding */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+button.comprado {
+    background-color: black; /* Fundo preto para o botão de comprar quando ativado */
+    color: white; /* Texto branco */
 }
