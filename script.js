@@ -15,6 +15,6 @@ document.getElementById('addButton').addEventListener('click', function() {
 
         listItem.appendChild(deleteButton);
         itemList.appendChild(listItem);
-        itemInput.value = ''; // Limpa o campo de entrada
+        itemInput.value = ''; 
     }
 });

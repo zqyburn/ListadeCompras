@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #a8c8e0, #f0f4f8); /* Gradiente de fundo */
+    background: linear-gradient(to right, #ffc8fa, #f0f4f8); /* Gradiente de fundo */
     height: 100vh; /* Altura total da viewport */
     display: flex; /* Usar flexbox para centralizar */
     justify-content: center; /* Centralizar horizontalmente */
@@ -9,20 +9,21 @@ body {
 }
 
 .container {
+    
     background: rgba(255, 255, 255, 0.2); /* Fundo branco semi-transparente */
     border-radius: 15px; /* Bordas arredondadas */
     padding: 20px; /* Espaçamento interno */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
     backdrop-filter: blur(10px); /* Efeito de vidro embaçado */
-    width: 300px; /* Largura fixa para o container */
+    width: 400px; /* Largura fixa para o container */
 }
 
 input {
     width: calc(100% - 22px); /* Largura do input */
-    padding: 10px; /* Espaçamento interno */
-    border: none; /* Remover borda padrão */
-    border-radius: 5px; /* Bordas arredondadas */
-    margin-bottom: 10px; /* Espaçamento inferior */
+    padding: 15px; /* Espaçamento interno */
+    border: 0px; /* Remover borda padrão */
+    border-radius: 3%; /* Bordas arredondadas */
+    margin-bottom: 0; /* Espaçamento inferior */
 }
 
 button {
@@ -52,4 +53,35 @@ li {
     padding: 10px; /* Espaçamento interno */
     background: rgba(255, 255, 255, 0.5); /* Fundo semi-transparente para os itens */
     border-radius: 5px; /* Bordas arredondadas */
+}
+.addbutton {
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remover borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    align-items: center;
+    display: block; /* Faz o botão ser um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+.textocentro {
+    text-align: center;
+}
+.alinhador {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    gap: 20px;
+}
+.imagem {
+    display: flex;
+
+    height: 30%;
+ 
+    
+
+    
 }
